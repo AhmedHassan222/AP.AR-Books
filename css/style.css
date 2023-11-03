@@ -833,7 +833,7 @@ span {
 
 /* features */
 #features {
-    background-color: #eff4f7;
+    background-color: #f5f6fa !important;
 }
 
 /* solution */
@@ -1824,4 +1824,53 @@ span {
     font-weight: 500;
     font-size: 14px;
     padding: 5px 0;
+}
+
+@media screen and (min-width:1800px) {
+
+    img , video
+    {
+        width: 40% !important;
+    }
+    nav , footer
+    {
+        padding-inline: 300px;
+    }
+    .w-70 
+    {
+        width: 50%;
+    }
+     
+    .forProjectOwner 
+    {
+        padding: 300px;
+        height: 100vh;
+    }
+    .imgContact 
+    {
+        width: 50px !important;
+    }
+    .w-80 , .w-90
+    {
+        width: 70%;
+    }
+    .logoStyleSpecial {
+        width: 300px !important;
+    }
+    .logoStyle {
+        width: 300px !important;
+    
+    }
+    .imageCoverd 
+    {
+        width: 100% !important;
+    }
+    .imgAbout 
+    {
+        width: 75% !important;
+    }
+    .iconStyleSpecial {
+        width: 200px !important;
+    }
+
 }
