@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APARBooks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg  fixed-top navbar-light">
+        <div class="container-fluid">
+            <a href="index.html">
+                <img class="logoStyle " src="assets/images/logo-dark.svg" alt="">
+            </a>
+            <button class="bg-transparent border-0 btnToggle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span id="open" class="navbar-toggler-icon d-block"></span>
+                <i id="close" class="ri-close-fill close d-none text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6 ms-3 position-relative">
+
+                    <li class="nav-item">
+                        <a class="nav-link linkSpecial  linkSpecial1"  href="for-project-owner.html">
+                            For Project Owners
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linkSpecial  linkSpecial2"  href="for-general-constractor.html">
+                            For General Contractors
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linkSpecial  linkSpecial3 " href="schedule.html">
+                            <span class="fs-6">Schedule a Demo</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6">
+
+                    <button class="loginButton  py-1 px-4 text-white">
+                        <a class="nav-link text-white" href="login.html">LOGIN</a>
+                    </button>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="header" class="w-100  text-center d-flex justify-content-center align-items-end ">
+        <div class="layer w-100 h-100">
+            <div class="container-fluid">
+                <h1 class="title w-100">
+                    Construction Accounting Made Easy
+                </h1>
+                <h2 class="subTitle mt-4 textGrayDark">Streamline construction payable and receivable processes
+                    Connecting everyone at the same page.</h2>
+                <div class="position-relative boxImage d-block  my-5">
+                    <img class=" w-60 " src="assets/images/video-poter1.png">
+                    <div class="d-flex justify-content-center align-items-center bgSpecial rounded-circle fs-3">
+                        <i class="ri-play-mini-fill text-white "></i>
+
+                    </div>
+                </div>
+                <video id="hero-player" class="mainImage video w-60 d-none  my-5" playsinline controls
+                    data-poster="./assets/images/video-poter1.png" data-background="#f5f6fa">
+                    <source
+                        src="https://aparbooks-videos.s3.us-west-1.amazonaws.com/construction-accounting-software.mp4"
+                        type="video/mp4" />
+                </video>
+
+            </div>
+        </div>
+
+    </header>
+    <section class="py-5 two">
+        <div class="mx-auto text-center position-relative ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598L12 1ZM12 3.04879L5 4.60434V13.7889C5 15.1263 5.6684 16.3752 6.7812 17.1171L12 20.5963L17.2188 17.1171C18.3316 16.3752 19 15.1263 19 13.7889V4.60434L12 3.04879ZM16.4524 8.22183L17.8666 9.63604L11.5026 16L7.25999 11.7574L8.67421 10.3431L11.5019 13.1709L16.4524 8.22183Z"
+                    fill="whitesmoke"></path>
+            </svg>
+            <h2 class="positionStyle position-absolute title  w-100">We Got You Covered</h2>
+        </div>
+        <div class="w-70 mx-auto   my-5 ">
+            <div class="row  justify-content-center  g-0">
+                <div class="col-sm-12 col-md-6 col-lg-6 boxImage  ">
+                    <a class="text-black nav-link" href="for-project-owner.html">
+                        <div class="position-relative ">
+                            <div class="position-absolute positionStyle2 p-4 ">
+                                <h3 class="headingSmooth textGrayDark fw-light">FOR <span class="fw-bold">PROJECT
+                                        OWNER</span></h3>
+                                <p class=" textGrayDark opacitynone">PROJECT OWNER MANAGEMENT TEAM</p>
+                            </div>
+
+                            <img class="w-100 imgSecondry" src="./assets/images/index_owner.jpg" alt="">
+                            <div class="position-absolute positionstyle px-1  mx-5 opacitynone pb-0 pd-md-5 pb-lg-5 ">
+                                <p class="textGrayDark paragraphStyleSpecial p-0">Empower your project management with
+                                    seamless collaboration with General Contractors and
+                                    project management teams, maintain accurate records, and access real-time financial
+                                    insights.
+                                    <a class="nav-link  fw-bold ps-2 textGrayDark small  " href="for-project-owner.html">>>>see more</a>
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 boxImage ">
+                    <a class="text-black nav-link" href="for-general-constractor.html">
+                        <div class="position-relative">
+                            <div class="position-absolute positionStyle2  p-4  ">
+                                <h3 class="headingSmooth textGrayDark fw-light">FOR <span class="fw-bold">GENERAL
+                                        CONTRACTOR</span></h3>
+
+                                <p class=" textGrayDark opacitynone">GENERAL CONTRACTOR FOR THE PROJECT</p>
+                            </div>
+                            <img class="w-100 imgSecondry" src="./assets/images/index_gc.png" alt="">
+                            <div class="position-absolute positionstyle p-1  mx-5 opacitynone pb-0 pd-md-5 pb-lg-5">
+                                <p class="textGrayDark paragraphStyleSpecial p-0 ">ENERAL CONTRACTOR FOR THE PROJECT
+                                    Streamline your daily construction accounting tasks, from check writing, project
+                                    payment
+                                    applications, reimbursements to business reports, and more.
+                                    <a class="nav-link  fw-bold ps-2 textGrayDark small " href="for-general-constractor.html">>>>see more</a>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="container py-5  ">
+        <div class="row g-3">
+            <div class="col-sm-12 col-md-3 col-lg-3  ">
+                <div>
+                    <div class=" fitContent mx-auto">
+                        <img class="homeImages" src="./assets/images/owner_feature2 (1).png" alt="">
+                    </div>
+                    <p class="paragraphSpecial text-center fw-light pt-2">Payment Application</p>
+                    <p class="text-center paragraph textGrayDark pt-0">Auto-Generated file package, including standard
+                        invoice or
+                        AIA-style application, for progress payments and retention release</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div>
+                    <div class=" fitContent mx-auto">
+                        <img class="homeImages" src="./assets/images/owner_feature3 (1).png" alt="">
+                    </div>
+                    <p class="paragraphSpecial text-center fw-light pt-2">Change Order</p>
+                    <p class="text-center paragraph textGrayDark pt-0">Auto-Generated file package, and the ability to
+                        approve,
+                        decline, or request changes, ensuring flexibility and control</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div>
+                    <div class=" fitContent mx-auto">
+                        <img class="homeImages" src="./assets/images/gc_feature3.png" alt="">
+                    </div>
+                    <p class="paragraphSpecial text-center fw-light pt-2">Reimbursement</p>
+                    <p class="text-center paragraph textGrayDark pt-0">Keep your accounting clean and reliable by
+                        recording
+                        reimbursement payments throughout your project AP and AR</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div>
+                    <div class=" fitContent mx-auto">
+                        <img class="homeImages" src="./assets/images/gc_feature4.png" alt="">
+                    </div>
+                    <p class="paragraphSpecial text-center fw-light pt-2">Preliminary Lien Notice
+                    </p>
+                    <p class="text-center paragraph textGrayDark pt-0">Stay ahead of potential financial risks by
+                        monitoring and
+                        managing preliminary lien notices from related parties, preventing losses</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div>
+                    <div class=" fitContent mx-auto">
+                        <img class="homeImages" src="./assets/images/gc_feature5.png" alt="">
+                    </div>
+                    <p class="paragraphSpecial text-center fw-light pt-2">Activity History</p>
+                    <p class="text-center paragraph textGrayDark pt-0">Easily tracking and monitoring all activities
+                        like record
+                        changes, and identify contributors throughout your records</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div>
+                    <div class=" fitContent mx-auto">
+                        <img class="homeImages" src="./assets/images/gc_feature6.png" alt="">
+                    </div>
+                    <p class="paragraphSpecial text-center fw-light pt-2">Project In-Progress Status</p>
+                    <p class="text-center paragraph textGrayDark pt-0">Get real-time insight into your project's
+                        financial position
+                        with project dashboard, featuring critical AP and AR data</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div>
+                    <div class=" fitContent mx-auto">
+                        <img class="homeImages" src="./assets/images/gc_feature7.png" alt="">
+                    </div>
+                    <p class="paragraphSpecial text-center fw-light pt-2">File Storage</p>
+                    <p class="text-center paragraph textGrayDark pt-0">Unlimited file storage space, automatically
+                        categorize
+                        uploaded files, relieve the burden of retrieving historical files</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <div>
+                    <div class=" fitContent mx-auto">
+                        <img class="homeImages" src="./assets/images/gc_feature8.png" alt="">
+                    </div>
+                    <p class="paragraphSpecial text-center fw-light pt-2">Email Notification</p>
+                    <p class="text-center paragraph textGrayDark pt-0">Stay informed and on schedule with email
+                        notifications,
+                        providing timely reminders and updates, immediately or at specified future times.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" text-muted d-no  whiteSmoke my-5  ">
+        <div class="container">
+            <div class="row  reverse align-items-center  justify-content-between ">
+                <div class="col-sm-12 col-md-6 col-lg-6 py-5  ">
+
+                    <div class="mx-auto  position-relative ">
+                        <i class="ri-calendar-todo-line position-relative  art"></i>
+
+                        <div class="  w-100 position-absolute topStyle ">
+                            <h2 class=" h2After text-start">For Construction
+                            </h2>
+                            <p class="py-4 ">
+                            <p class="text-start">Tailored to optimize construction finances, boost <br>efficiency, and
+                                drive project
+                                profitability.</p>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 py-5  imgReverse ">
+                    <div class="  ">
+                        <img src="./assets/images/index_industry.png" alt="" class="w-100 ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class=" text-muted d-no  white my-5  ">
+        <div class="container">
+            <div class="row  reverse2 align-items-center  justify-content-between ">
+                <div class="col-sm-12 col-md-6 col-lg-6 py-5  ">
+
+                    <div class="mx-auto  position-relative ">
+                        <i class="ri-upload-cloud-2-line position-relative  art art2"></i>
+
+                        <div class="  w-100 position-absolute topStyle ">
+                            <h2 class=" h2After text-start">Collaboration
+                            </h2>
+                            <p class="py-4 ">
+                            <p class="text-start">Among general contractors, project owners, and managers, ensuring
+                                streamlined communication and efficient teamwork.</p>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 py-5  imgReverse ">
+                    <div class="  ">
+                        <img src="./assets/images/index_collaboration.png" alt="" class="w-100 ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class=" text-muted d-no  whiteSmoke my-5  ">
+        <div class="container">
+            <div class="row  reverse align-items-center  justify-content-between ">
+                <div class="col-sm-12 col-md-6 col-lg-6 py-5  ">
+
+                    <div class="mx-auto  position-relative ">
+                        <i class="ri-lock-2-line position-relative  art"></i>
+
+                        <div class="  w-100 position-absolute topStyle ">
+                            <h2 class=" h2After text-start">Real-Time Insights
+                            </h2>
+                            <p class="py-4 ">
+                            <p class="text-start">Empowering you to make informed decisions and proactively address
+                                financial challenges..</p>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 py-5  imgReverse ">
+                    <div class="  ">
+                        <img src="./assets/images/index_real_time_insights.png" alt="" class="w-100 ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class=" text-muted d-no  bg-white white my-5  ">
+        <div class="container">
+            <div class="row  reverse2 align-items-center  justify-content-between ">
+                <div class="col-sm-12 col-md-6 col-lg-6 py-5  ">
+
+                    <div class="mx-auto  position-relative ">
+                        <i class="ri-upload-cloud-2-line position-relative  art art2"></i>
+
+                        <div class="  w-100 position-absolute topStyle ">
+                            <h2 class=" h2After text-start">Organize
+
+                            </h2>
+                            <p class="py-4 ">
+                            <p class="text-start">Hassle-free from mass paperwork, embracing smart work over hard work.
+                            </p>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 py-5  imgReverse ">
+                    <div class="  ">
+                        <img src="./assets/images/index_organize.png" alt="" class="w-100 ">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--  section two-->
+
+    <section class="project text-center" >
+
+        <div class="layer3 w-100 h-100 d-flex justify-content-center py-5 align-items-center">
+            <div class=" w-100 position-relative">
+                <h1 class="hash ">#1</h1>
+                <h2 class="headingSpecial ">Leading Solution for small to Medium Size Project</h2>
+                <p class=" paragraphStyle mt-5">Learn how we can empower your project for success.</p>
+                <button class="schedule py-1 px-3 mt-3 rounded-1">
+                    <a class="nav-link text-white" href="schedule.html">Schedule a Demo Now</a>
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="py-5  mt-5 belive">
+        <h2 class="text-center title fs-2 fw-bold ">We Believe Your Success Leads to Ours</h2>
+        <h4 class="text-center">Where Your Success is Our Priority</h4>
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="boxSpecial p-4">
+                        <p class="specialTextImportant">Simple view and easy to manage</p>
+                        <p class="text-testimoniol">The ease of software application, that is, it is
+                            user-friendly and the
+                            ability to schedule and monitor projects at every level of completion.</p>
+                        <p class="name">Dan Shwartz</p>
+                        <p class="postion">Accountant</p>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="boxSpecial p-4">
+                        <p class="specialTextImportant">Great Set-Up & Functions for contractor</p>
+                        <p class="text-testimoniol">That it is very clear, no frills or fancy stuff. Ease
+                            to entry data at one
+                            page with all the possibles, Makes my job much more easier. Easy to tailor things to each
+                            user. Love it!</p>
+                        <p class="name">Jane Guzmann</p>
+                        <p class="postion">Sr. Coordinator</p>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="boxSpecial p-4">
+                        <p class="specialTextImportant">Use it to manage my project</p>
+                        <p class="text-testimoniol">Never felt so easy to manage payment applications, and
+                            liens. Everything I
+                            care is just there, ease to find and track</p>
+                        <p class="name">Helen Liu</p>
+                        <p class="postion">Project Owner</p>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="boxSpecial p-4">
+                        <p class="specialTextImportant">You too should try it</p>
+                        <p class="text-testimoniol">As an architect, I've got my hands full, juggling
+                            dozens of project
+                            payment applications all at once. It can get pretty maddening sometimes, especially when I'm
+                            trying to track down the history of things. But then, I discovered APARBooks, and it's been
+                            a game-changer for me. Everything I need is right there in one neat portal – no frills, no
+                            unnecessary bells and whistles. Plus, the best part? It won't cost you a dime. I can't
+                            recommend it highly enough.</p>
+                        <p class="name">
+                            Anthony Lebla mb-0nc</p>
+                        <p class="postion">Architect</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container  py-5">
+        <div class="row justify-content-center g-3">
+            <div class="col-sm-12 col-md-6 col-lg-6  pe-0 me-3 fitContent  ">
+                <div class="d-flex justify-content-center">
+                    <i class="ri-star-fill fs-3 iconStyle"></i>
+                    <i class="ri-star-fill fs-3 iconStyle"></i>
+                    <i class="ri-star-fill fs-3 iconStyle"></i>
+                    <i class="ri-star-fill fs-3 iconStyle"></i>
+                    <i class="ri-star-fill fs-3 iconStyle"></i>
+                </div>
+                <p class="text-center textStop  border-end "> 4.9 Rating based on 849 votes</p>
+                <div class="d-flex justify-content-center mt-5">
+                    <button class="mt-1 schedule py-1 px-4 rounded-1">
+                        <a class=" nav-link text-white" href="for-project-owner.html">For Project Owner</a>
+                    </button>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 ps-0 fitContent">
+                <div class="d-flex justify-content-center">
+                    <i class="ri-chat-3-fill fs-3 iconStyle"></i>
+                </div>
+                <p class="text-center textStop ">4.9 Rating based on 849 votes</p>
+                <div class="d-flex justify-content-center mt-5">
+                    <button class="mt-1 schedule py-1 px-4 rounded-1">
+                        <a href="for-general-constractor.html" class="nav-link text-white">For General Contractor</a>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="FAQ py-5 mt-5">
+        <h2 class="text-center py-5 title fs-1">FAQ</h2>
+        <div class="container">
+            <div class="qustion">
+                <div class="d-flex my-3 ">
+                    <i  id="icon0"
+                        class="fw-bold  align-self-start ri-add-fill rounded-circle specialPlus text-center  me-2 text-white "></i>
+                    <p class="text-muted pt-1">What is APARBooks?</p>
+                </div>
+                <p id="small0" class="small text-muted d-none">Aparbooks is a comprehensive accounting software designed
+                    to
+                    seamlessly integrate accounts payable and accounts receivable. This streamlines your accounting
+                    processes, making it easier for every role involved in construction projects, including General
+                    Contractors, Project Owners, and Project Managers, to work collaboratively on the same page.</p>
+
+            </div>
+            <div class="qustion">
+                <div class="d-flex my-3 ">
+                    <i id="icon1"
+                        class="fw-bold  align-self-start ri-add-fill rounded-circle specialPlus text-center  me-2 text-white"></i>
+                    <p class="text-muted pt-1">What makes APARBooks unique in the market?
+                    </p>
+                </div>
+                <p id="small1" class="small text-muted d-none">Aparbooks is unique because it's exclusively built for
+                    the
+                    construction
+                    industry, addressing its specific accounting needs, such as change orders and retainage. While
+                    offering
+                    core accounting functions, our software is affordable for this specialized industry. For pricing
+                    details, please visit our product page.</p>
+            </div>
+            <div class="qustion">
+                <div class="d-flex my-3 ">
+                    <i id="icon2"
+                        class="fw-bold  align-self-start ri-add-fill rounded-circle specialPlus text-center  me-2 text-white"></i>
+                    <p class="text-muted pt-1">How can APARBooks benefits my business?</p>
+                </div>
+                <p id="small2" class="small text-muted d-none">Aparbooks is a valuable asset to your construction
+                    business, offering
+                    cost reduction, time savings, streamlined paperwork management, and user-friendly accounting
+                    solutions.
+                    By using Aparbooks, you can significantly cut costs, save time on financial management tasks,
+                    simplify
+                    paperwork procedures, and make the accounting processes easier for your team, ultimately enhancing
+                    the
+                    efficiency of your construction projects.</p>
+            </div>
+            <div class="qustion">
+                <div class="d-flex my-3 ">
+                    <i id="icon3"
+                        class="fw-bold  align-self-start ri-add-fill rounded-circle specialPlus text-center  me-2 text-white"></i>
+                    <p class="text-muted pt-1">What construction industries does APARBooks serve best?</p>
+                </div>
+                <p id="small3" class="small text-muted d-none">Aparbooks serves a wide range of construction industries,
+                    including
+                    residential, commercial, and multifamily sectors. Our software is designed to accommodate common
+                    construction contract types, making it a versatile solution for various construction projects across
+                    these industry segments.</p>
+            </div>
+            <div class="qustion">
+                <div class="d-flex my-3 ">
+                    <i id="icon4"
+                        class="fw-bold  align-self-start ri-add-fill rounded-circle specialPlus text-center  me-2 text-white"></i>
+                    <p class="text-muted pt-1">Is it suitable for my project?</p>
+                </div>
+                <p id="small4" class="small text-muted d-none">Aparbooks is purpose-built to cater to small to mid-sized
+                    construction projects, typically with contract prices ranging from $100K to $5M. We have
+                    meticulously considered the unique requirements and characteristics of projects falling within this
+                    range, ensuring that our software is optimized to deliver exceptional value and efficiency for these
+                    specific project sizes.</p>
+            </div>
+            <div class="qustion">
+                <div class="d-flex my-3 ">
+                    <i id="icon5"
+                        class="fw-bold  align-self-start ri-add-fill rounded-circle specialPlus text-center  me-2 text-white"></i>
+                    <p class="text-muted pt-1">Is it easy to use?</p>
+                </div>
+                <p id="small5" class="small text-muted d-none">Aparbooks is designed with user-friendliness in mind. Our
+                    intuitive
+                    interface and user-centric features ensure that both novices and experienced users can easily
+                    navigate
+                    and leverage the software. And our support team is available to assist whenever needed.</p>
+            </div>
+            <div class="qustion">
+                <div class="d-flex my-3 ">
+                    <i id="icon6"
+                        class="fw-bold  align-self-start ri-add-fill rounded-circle specialPlus text-center  me-2 text-white"></i>
+                    <p class="text-muted pt-1">Can I integrate APARBooks with other construction management tools?</p>
+                </div>
+                <p id="small6" class="small text-muted d-none">No, we prioritize the security and confidentiality of
+                    your company's
+                    valuable data. Therefore, we do not integrate Aparbooks with external construction management tools.
+                    We
+                    have designed Aparbooks to provide comprehensive features that cover the majority of your daily
+                    tasks,
+                    ensuring efficiency and data protection. Avoiding multiple integrations also helps maintain clean
+                    records and minimizes the learning curve, making your accounting processes with Aparbooks as
+                    straightforward and secure as possible. </p>
+            </div>
+            <div class="qustion">
+                <div class="d-flex my-3 ">
+                    <i id="icon7"
+                        class="fw-bold  align-self-start ri-add-fill rounded-circle specialPlus text-center  me-2 text-white"></i>
+                    <p class="text-muted pt-1">Is my financial data secure?</p>
+                </div>
+                <p id="small7" class="small text-muted d-none">Your data privacy is our top priority. Aparbooks takes
+                    the security of your financial data very seriously. We implement seven layers of encryption, making
+                    it virtually impossible for anyone, including us, to access your financial data without your
+                    explicit permission.
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer class="py-4">
+        <div class="footerBox py-4">
+            <div class="container-fluid text-white">
+                <div class="row justify-content-between text-center text-lg-start text-md-center">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <h3 class="fs-3">Ready to get started?</h3>
+                        <p class="fs-6">Create your free account now</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 fitContent col-lg-6 mx-auto   mx-lg-0 mx-md-auto ">
+                        <a class="nav-link signUpButton text-white px-5 py-2 rounded-1 " href="register.html">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-5 footer2 text-start">
+            <div class="container-fluid text-white py-3">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <p class="">APARBooks is a comprehensive accounting software designed to seamlessly integrate
+                            <span class="fw-bold text-white">ACCOUNT PAYABLE</span> and <span
+                                class="fw-bold text-white">ACCOUNT RECEIVABLE</span> for project owners and general
+                            contractors
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 offset-md-2 offset-lg-2">
+                        <p class="text-muted">SOLUTIONS</p>
+                        <p class=" my-1">
+                            <a class="SpecialLink" href="for-project-owner.html">
+                                For Project Owners
+                            </a>
+                        </p>
+                        <p class=" my-1">
+                            <a class="SpecialLink" href="for-general-constractor.html">
+                                For General Contractors
+                            </a>
+                        </p>
+                        <p class=" my-1">
+                            <a class="SpecialLink" href="schedule.html">
+                                <span>Schedule a demo</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3 ">
+                        <p class="text-muted">TERMS</p>
+                        <p>
+                            <a class="SpecialLink" href="terms.html">Terms of service</a>
+                        </p>
+                        <p>
+                            <a class="SpecialLink" href="privacy.html">Privacy policy</a>
+                        </p>
+                        <p>
+                            <a class="SpecialLink" href="contact.html">Contact us</a>
+                        </p>
+                        <p>
+                            <a class="SpecialLink" href="about.html">About</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-muted copyRight">© 2018-2023 | APARBOOKS Technologies | All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

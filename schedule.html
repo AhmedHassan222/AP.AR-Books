@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>    Schedule a Demo - APARBooks
+     - #1 Construction Accounting Solution </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="APARBooks Technologies" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="https://staging-aparbooks.com/assets/images/favicon.png">
+
+    <!--Core CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://staging-aparbooks.com/assets/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="https://staging-aparbooks.com/assets/css/core.css" type="text/css" />
+    <link rel="stylesheet"  href="https://staging-aparbooks.com/assets/css/remixicon.css" type="text/css" />
+
+    <style>
+</style>
+    <style>
+    @media screen and (max-width: 1023px) {
+        .navbar-menu {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .section {
+            padding: 5rem 3rem;
+        }
+    }
+    @media screen and (min-width: 1216px) {
+        .container:not(.is-max-desktop) {
+            max-width: 1320px;
+        }
+    }
+    body {
+        font-family: "Poppins",sans-serif !important;
+    }
+    .me-1 {
+        margin-right: .5rem
+    }
+    .text-success {
+        color: #0ab39c;
+    }
+    .text-danger {
+        color: #f06548;
+    }
+    .text-info {
+        color: #299cdb;
+    }
+    .fm-poppins {
+        font-family:'Poppins' !important;
+    }
+    .fc-info {
+        color: #299cdb !important;
+    }
+    .badge-soft-danger {
+        color: #f06548;
+        background-color: rgba(240,101,72,.1);
+    }
+    .badge-soft-warning {
+        color: #f7b84b;
+        background-color: rgba(247,184,75,.1);
+    }
+    .badge-soft-info {
+        color: #299cdb;
+        background-color: rgba(41,156,219,.1);
+    }
+    .badge-soft-default {
+        color: #495057;
+        background-color: #f3f6f9;
+    }
+    .button.info-btn.raised:hover {
+        background-color: #299cdb;
+    }
+
+    .parallax-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color: #EFEFEF;
+        opacity: .04;
+    }
+    .hero-body .title.main-title {
+        font-size: 3rem;
+    }
+
+    .plyr__video-wrapper .plyr__poster {
+        background-color: #f3f6f9;
+    }
+    
+
+    .section-text {
+        font-family: "Poppins",sans-serif;
+        font-size: 1.2rem;
+    }
+    .section.section-feature-grey {
+        background-color: #f5f6fa !important;
+    }
+
+
+    /* FAQ */
+    .faq-wrapper .faq-block {
+        margin: 0 0 30px 0 !important;
+    }
+    .faq-wrapper .faq-block .block-header h3 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    /* Navigation Bar */
+    .navbar-wrapper .navbar-brand img {
+        height: 50px !important;
+    }
+    .navbar-item img {
+        max-height: 3.75rem;
+    }
+    .navbar-wrapper .navbar-item {
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+    .navbar-wrapper .navbar-item:hover a, .navbar-wrapper .navbar-item.has-dropdown:hover a {
+        background:#299cdb;
+    }
+    .navbar-wrapper.navbar-light .navbar-item, .navbar-wrapper.navbar-light .navbar-link {
+        color: #4A4A4A;
+    }
+    .navbar-wrapper.is-transparent .navbar-item.is-slide, .navbar-wrapper.is-transparent .navbar-link.is-slide {
+        color: #4a4a4a;
+    }
+
+    /* Figure */
+    figure.team-slanted {
+        background: #EFEFEF !important;
+    }
+    figure.team-slanted h2 {
+        font-size: 2rem;
+        color: #36314c;
+        word-spacing: normal;
+    }
+    figure.team-slanted h2 span {
+        padding-left: 6px;
+        color: #039be5 !important;
+    }
+    figure.team-slanted .member-position {
+        color: #36314c;
+    }
+    figure.team-slanted:hover figcaption::before {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    figure.team-slanted figcaption::before {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        width: 90%;
+        height: 50%;
+    }
+
+    figure.team-slanted p {
+        position: absolute;
+        left: 10%;
+        top: 55%;
+        width: 80%;
+        padding: 0;
+        margin: 0;
+        letter-spacing: 0px;
+        font-size: 14px;
+        color: #353535;
+        text-transform: none;
+        opacity: 0;
+    }
+    figure.team-slanted:hover p {
+        opacity: 1;
+    }
+    /***/
+    
+    .footer-light-medium .footer-body .footer-description,
+    .footer-light-medium .footer-head .head-text p,
+    .footer-light-medium .footer-body .moto,
+    .footer-light-medium .footer-body .footer-column .column-item a,
+    .footer-light-medium .footer-head .head-text h3 {
+        color: #EFEFEF;
+    }
+    .fancy-pricing .fancy-pricing-card {
+        border-radius: 10px;
+    }
+    .fancy-pricing .fancy-pricing-card:hover {
+        transform: none !important;
+        -webkit-transform: none !important;
+        background: #fefbf6 !important;
+    }
+    .fancy-pricing .fancy-pricing-card .plan-name {
+        font-size: 1.5rem;
+        padding-bottom: 0;
+    }
+    .fancy-pricing .fancy-pricing-card .plan-price {
+        padding-bottom: 10px;
+    }
+    .fancy-pricing .fancy-pricing-card .plan-features li {
+        justify-content: left;
+        margin: 8px 10px;
+    }
+    .fancy-pricing .fancy-pricing-card .plan-features li.bordered {
+        border-bottom: 1px solid #EFEFEF;
+        padding: 4px 0;
+    }
+    .fancy-pricing .fancy-pricing-card .plan-features li .feature-count-text {
+        color: #444f60;
+        font-size: .95rem;
+    }
+    .pricing-picker span {
+        color: #444f60;
+    }
+    .pricing-picker span.is-active {
+        border: 1px solid #299cdb;
+        background: #299cdb;
+        color: #FFF;
+    }
+    
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="hero parallax is-relative"
+        data-background="https://staging-aparbooks.com/assets/images/nav_bg.png"
+        data-color="#f5f6fa"
+        data-color-opacity="0.95">
+
+    <nav class="navbar navbar-wrapper navbar-fade navbar-light is-transparent">
+    <div class="container">
+        <!-- Brand -->
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img class="light-logo" src="assets/images/logo-dark.svg" alt="">
+                <img class="dark-logo switcher-logo" src="assets/images/logo-dark.svg" alt="">
+            </a>
+
+            <!-- Responsive toggle -->
+            <div class="custom-burger" data-target="is-cloned">
+                <a class="responsive-btn" href="javascript:void(0);">
+                    <span class="menu-toggle">
+                        <span class="icon-box-toggle">
+                            <span class="rotate">
+                                <i class="icon-line-top"></i>
+                                <i class="icon-line-center"></i>
+                                <i class="icon-line-bottom"></i>
+                            </span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <!-- /Responsive toggle -->
+        </div>
+
+        <!-- Navbar menu -->
+        <div class="navbar-menu">
+            <!-- Navbar Start -->
+            <div class="navbar-start">
+                <!-- Navbar item -->
+                <a class="navbar-item is-slide" href="for-project-owner.html">
+                    For Project Owners
+                </a>
+                <!-- Navbar item -->
+                <a class="navbar-item is-slide" href="for-general-constractor.html">
+                    For General Contractors
+                </a>
+                            </div>
+
+            <!-- Navbar end -->
+            <div class="navbar-end">
+                <!-- Signup button -->
+
+<div class="navbar-item">
+
+    
+    
+        <a id="#signup-btn" href="login.html"
+            class="button button-signup is-bold btn-align raised info-btn light-btn">
+            LOGIN
+        </a>
+
+    
+    </div>            </div>
+        </div>
+    </div>
+</nav>
+    <!-- Hero image -->
+    <div id="main-hero" class="hero-body">
+        <div class="container has-text-centered">
+            <div class="columns is-vcentered">
+            <div class="column is-6 is-offset-3 has-text-centered is-subheader-caption" >
+                <h1 class="title is-2">Schedule a Demo</h1>
+                            </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="section" style="padding: 3rem">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/aparbooks/30min" style="min-width:320px;height:1100px;"></div>
+    </div>
+
+    
+
+    <footer class="footer-light-medium footer-dark">
+    <div class="container">
+
+                    
+
+        <div class="footer-head">
+            <div class="head-text">
+                <h3>Ready to get started?</h3>
+                <p>Create your free account now</p>
+            </div>
+            <div class="head-action">
+                <div class="buttons">
+                    <a class="button primary-btn raised action-button is-bold" href="register.html">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div class="columns footer-body">
+            <!-- Column -->
+            <div class="column is-4">
+                <div class="pt-10 pb-10">
+                    <img class="small-footer-logo" src="assets/img/logos/bulkit-logo-g.png" alt="">
+                    <div class="footer-description" style="line-height: 2">
+                        APARBooks is a comprehensive accounting software designed to seamlessly integrate 
+                        <span style="font-weight: bold">ACCOUNT PAYABLE</span> and <span style="font-weight: bold">ACCOUNT RECEIVABLE</span> for project owners and general contractors
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Column -->
+            <div class="column is-6 is-offset-2">
+                <div class="columns">
+                    <!-- Column -->
+                    <div class="column">
+                        <ul class="footer-column">
+                            <li class="column-header" style="color: #9A9A9A">
+                                Solutions
+                            </li>
+                            <li class="column-item"><a href="for-project-owner.html">For Project Owners</a></li>
+                            <li class="column-item"><a href="for-general-constractor.html">For General Contractors</a></li>
+                            <li class="column-item"><a href="schedule.html" class="info-text">Schedule a demo</a></li>
+                        </ul>
+                        
+                    </div>
+                    <!-- Column -->
+                    
+                    <!-- Column -->
+                    <div class="column">
+                        <ul class="footer-column">
+                            <li class="column-header" style="color: #9A9A9A">
+                                Terms
+                            </li>
+                            <li class="column-item"><a href="terms.html">Terms of service</a></li>
+                            <li class="column-item"><a href="privacy.html">Privacy policy</a></li>
+                            <li class="column-item"><a href="contact.html">Contact us</a></li>
+                            <li class="column-item"><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <div class="footer-copyright has-text-centered">
+            <p>© 2018-2023 | <a href="index.html">APARBOOKS Technologies</a> | All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://staging-aparbooks.com/assets/js/app.js"></script>
+    <script src="https://staging-aparbooks.com/assets/js/core.js"></script>
+
+
+
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+</body>
+</html>

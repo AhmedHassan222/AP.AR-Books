@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APARBooks - logIn </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR  -->
+    <div class="navbar navbar-expand-lg  fixed-top navbar-light">
+        <div class="container">
+            <img class="logoStyle " src="assets/images/logo-dark.svg" alt="">
+
+
+        </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="auth-page-wrapper my-5 py-5">
+        <!-- auth page content -->
+        <div class="auth-page-content d-flex justify-content-center align-items-center" style="height:calc(100vh - 6rem)">
+            <div class="container">
+                <div class="row justify-content-center">
+    
+                    <div class="alert alert-danger alert-border-left alert-dismissible fade show" role="alert" id="loginError" style="display: none">
+                        <i class="ri-alert-line me-3 align-middle"></i>
+                        The login credentials provided are incorrect. Please verify your email and password and try again.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+    
+                    <input type="hidden" id="back" value="/" />
+    
+                    
+                                        <div class="col-12 text-center">
+        <div class="mb-3">
+            <div class="avatar-sm mx-auto">
+                <div class="avatar-title ">
+                    <i class="ri-lock-line bg-light text-primary fs-4 rounded-circle p-1 text-black"></i>
+                </div>
+            </div>
+        </div>
+        <h3 class="fs-2 fw-light">Welcome Back !</h3>
+        <p class="text-muted">Login to Your Dashboard</p>
+    </div>
+    <div class="col-md-8 col-lg-6 col-xl-5">
+    
+        
+        <div class="card mt-4">
+            <div class="card-body p-4">
+                <div class="p-2">
+                    <form action="" method="POST" id="loginFrm">
+    
+                        <input type="hidden" name="_token" value="" autocomplete="off">
+                        <div class="mb-3">
+    
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Enter email" value="" >
+    
+                        </div>
+    
+                        <div class="mb-3">
+                            <div class="float-end">
+                                <a href="" class="nav-link textGrayDark fs-6">
+                                    Forgot password?
+                                </a>
+                            </div>
+    
+                            <label class="form-label" for="password-input">Password</label>
+                            <div class="position-relative auth-pass-inputgroup mb-3">
+                                <input type="password" class="form-control pe-5" name="password" placeholder="Enter password" id="password-input" value="">
+                                <button class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted" type="button" id="password-addon">
+                                    <i class="ri-eye-fill align-middle"></i>
+                                </button>
+                            </div>
+                        </div>
+    
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="1" name="remember" id="auth-remember-check">
+                            <label class="form-check-label" for="auth-remember-check">Remember me</label>
+                        </div>
+    
+                        <div class="mt-4">
+                            <button class="btn btn-primary w-100 text-white" type="button" id="loginBtn">
+                                <i class="ri-arrow-right-line align-bottom me-2"></i>
+                                Login
+                            </button>
+                            <button class="btn btn-primary w-100" type="button" id="loginBtn_loader" style="display:none" disabled>
+                                <div class="spinner-border text-light" role="status" style="width:1rem;height:1rem">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- end card body -->
+        </div>
+        <!-- end card -->
+    
+        <div class="mt-4 text-center">
+            <p class="pt-3 mb-2">
+                Interesting our product ? 
+            </p>
+            <p class="mb-0">
+                <a href="register.html" class="fw-medium text-primary text-decoration-underline"> 
+                    Register to get start
+                </a> 
+                <span class="px-2">-or-</span>
+                <a href="schedule.html" class="fw-medium text-primary text-decoration-underline"> 
+                    Schedule a Demo
+                </a> 
+            </p>
+        </div>
+    </div>                
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end auth page content -->
+    
+        <footer class=" py-4 footerAuth bg-white ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <p class="mb-0 text-muted small">
+                                &copy; 2020-
+                                <script>document.write(new Date().getFullYear())</script> APARBOOKS Technologies All Rights
+                                Reserved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    
+    
+        <div id="preloader" class="bg-light bg-opacity-50 d-none">
+        <div id="status">
+            <div class="spinner-border text-primary avatar-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Extra JAVASCRIPT Libs for certain Pages-->
+        <script>
+        $(function() {
+            var ua = window.navigator.userAgent;
+            var edge = ua.indexOf('Edg') || ua.indexOf('Edge');
+    
+            if (edge > 0) {
+                $("#password-addon").remove();
+            }
+            else {
+                document.getElementById("password-addon").addEventListener("click", function (event) {
+    
+                var passwordInput = document.getElementById('password-input');
+                    if (passwordInput.type === "password") {
+                        passwordInput.type = "text";
+                    } else {
+                        passwordInput.type = "password";
+                    }
+                });
+            }
+    
+    
+        });
+    
+        //-- 参数判断
+        let current = getAllUrlParams();
+        for (const key in current) {
+            if (Object.hasOwnProperty.call(current, key)) {
+                if( key == "email") {
+                    $("#email").val(current[key]);
+                }
+            }
+        }
+    
+        //-- 监听回车
+        $(document).keypress(function(event) {
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if(keycode == '13') {
+                //执行回车事件的操作
+                $("#loginBtn").trigger("click");
+            }
+        });
+    
+        $("#loginBtn").on('click', function(){
+    
+            let $this = $(this);
+            let loader = $("#" + $this.attr('id') + "_loader");
+    
+            let back = $("#back").val();
+    
+            $("#loginError").hide();
+    
+            $this.hide();
+            loader.show();
+    
+            var formData = new FormData(document.getElementById('loginFrm'));
+    
+            $.ajax({
+                url: "/login",
+                method: 'POST',
+                async: true,
+                data: formData,
+                dataType: 'JSON',
+                contentType: false,
+                processData: false,
+                success: function(data) {
+                    //Success
+                    location.href = back;
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    //form validation
+                    $("#loginError").show();
+    
+                    loader.hide();
+                    $this.show();
+                }
+            })
+    
+    
+        });
+    
+        function disableBackButton() {
+            setTimeout(() => {
+                history.pushState(null, null, document.URL)
+    
+                window.addEventListener('popstate', function(){
+                    history.pushState(null, null, document.URL)
+                })
+                // location.replace(location.href)
+            }, 100);
+        }
+    
+    
+    
+    function getAllUrlParams(url) {
+    
+        // get query string from url (optional) or window
+        var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+    
+        // we'll store the parameters here
+        var obj = {};
+    
+        // if query string exists
+        if (queryString) {
+    
+          // stuff after # is not part of query string, so get rid of it
+          queryString = queryString.split('#')[0];
+    
+          // split our query string into its component parts
+          var arr = queryString.split('&');
+    
+          for (var i = 0; i < arr.length; i++) {
+            // separate the keys and the values
+            var a = arr[i].split('=');
+    
+            // set parameter name and value (use 'true' if empty)
+            var paramName = a[0];
+            var paramValue = typeof (a[1]) === 'undefined' ? true : a[1];
+    
+            // (optional) keep case consistent
+            paramName = paramName.toLowerCase();
+            if (typeof paramValue === 'string') paramValue = paramValue.toLowerCase();
+    
+            // if the paramName ends with square brackets, e.g. colors[] or colors[2]
+            if (paramName.match(/\[(\d+)?\]$/)) {
+    
+              // create key if it doesn't exist
+              var key = paramName.replace(/\[(\d+)?\]/, '');
+              if (!obj[key]) obj[key] = [];
+    
+              // if it's an indexed array e.g. colors[2]
+              if (paramName.match(/\[\d+\]$/)) {
+                // get the index value and add the entry at the appropriate position
+                var index = /\[(\d+)\]/.exec(paramName)[1];
+                obj[key][index] = paramValue;
+              } else {
+                // otherwise add the value to the end of the array
+                obj[key].push(paramValue);
+              }
+            } else {
+              // we're dealing with a string
+              if (!obj[paramName]) {
+                // if it doesn't exist, create property
+                obj[paramName] = paramValue;
+              } else if (obj[paramName] && typeof obj[paramName] === 'string'){
+                // if property does exist and it's a string, convert it to an array
+                obj[paramName] = [obj[paramName]];
+                obj[paramName].push(paramValue);
+              } else {
+                // otherwise add the property
+                obj[paramName].push(paramValue);
+              }
+            }
+          }
+        }
+    
+        return obj;
+    }
+    </script>
+    
+    
+    <script>
+    /**************************Loading Show and Hide*******************************/
+    var load_to_show = function() {
+        $('#preloader').removeClass('d-none');
+    }
+    
+    var load_to_hide = function() {
+        $('#preloader').addClass('d-none');
+    }
+    //
+    /********************* Add loading button ************************/
+    //
+    $("button.button-loader, a.button-loader").each(function(index, element) {
+        let $element = $(element);
+    
+        // console.log(element);
+        let id = $element.attr('id');
+    
+        $element.after(`<button class="btn btn-primary btn-load" id="${id}_loader" style="display: none" disabled>
+                    <span class="d-flex align-items-center">
+                        <span class="spinner-border flex-shrink-0" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </span>
+                        <span class="flex-grow-1 ms-2">Loading...</span>
+                    </span></button>`);
+    });
+    
+    //-- Ajax Handler for API Notification
+    var handle_ajax_notification = function(response) {
+    
+        if (typeof response == 'object') {
+            //show notification
+            if (response.message.hasOwnProperty('content')) {
+                let title = response.message.hasOwnProperty('title') ? response.message.title : '';
+                notify(response.message.type, title, response.message.content);
+            }
+        }
+    }
+    
+    //-- Ajax Handler for Error
+    var handle_ajax_error = function(x, status, error) {
+        if (x.status == 401) {
+            alert("Wrong Bearer Token");
+            window.location.href = "/login";
+        } else if (x.status == 403) {
+            alert("Unverified email");
+            window.location.href = "/";
+        } else if (x.status == 404) {
+            alert("404");
+            window.location.href = "/";
+        } else if (x.status == 429) {
+            alert("Too many times attempt");
+        } else if (x.status == 498) {
+            alert("No permission to this domain");
+            window.location.href = "/";
+        }
+        //---Form validation Fail---
+        else if (x.status == 422) {
+            //handeld by ajax caller
+        } else if (x.status == 500) {
+            alert("system error");
+        } else {
+            alert("An error occurred: " + status + "nError: " + error);
+        }
+    };
+    
+    //-- Parse form validation errors from Ajax Call
+    var ajax_parse_form_errors = function(frm, errors) {
+        $(frm).find('.is-invalid').removeClass('is-invalid');
+        $(frm).find('.invalid-feedback').html('');
+        for (var input in errors) {
+            // skip loop if the property is from prototype
+            if (!errors.hasOwnProperty(input)) continue;
+    
+            let element = $(frm).find("[name='" + input + "']");
+            if (element.length > 1) {
+                element = element.last().parent('div');
+            }
+            element.addClass('is-invalid');
+            element.next('.invalid-feedback').length > 0 ? element.next('.invalid-feedback').html(errors[input]
+                .join(", ")) : element.after('<div class="invalid-feedback"> ' + errors[input].join(", ") +
+                ' </div>');
+        }
+        $(frm).find('.is-invalid:first').focus();
+    };
+    </script>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

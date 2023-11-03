@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APARBooks - logIn </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR  -->
+    <div class="navbar navbar-expand-lg  fixed-top navbar-light">
+        <div class="container">
+            <img class="logoStyle " src="assets/images/logo-dark.svg" alt="">
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!-- auth page content -->
+    <div class="auth-page-wrapper my-5 py-5 ">
+        <!-- auth page content -->
+        <div class="auth-page-content d-flex justify-content-center align-items-center">
+            <div class=" container">
+                <div class="row justify-content-center">
+
+
+                    <div class="col-12 text-center">
+                        <div class="mb-3">
+                            <div class="avatar-sm mx-auto">
+                                <i
+                                    class="ri-user-add-line avatar-title bg-light text-primary fs-4  text-black rounded-circle p-2"></i>
+                            </div>
+                        </div>
+                        <h3 class="fs-2 fw-light">Register to Get Started</h3>
+                        <p class="text-muted">With APARBooks, project accounting paperwork has never been easier.</p>
+                    </div>
+
+                    <div class="col-md-8 col-lg-6 col-xl-6">
+
+
+                        <div class="card mt-3">
+                            <div class="card-body p-4">
+                                <div class="p-2">
+                                    <form class="needs-validation" method="POST"
+                                        action="https://staging-aparbooks.com/register" enctype="multipart/form-data"
+                                        id="regFrm">
+                                        <input type="hidden" name="_token" value="" autocomplete="off">
+                                        <div class="row">
+
+                                            <div class="mb-3 col-md-6">
+                                                <label for="first_name" class="form-label">First Name</label>
+
+                                                <input type="text" name="first_name" id="first_name"
+                                                    placeholder="Enter your first name" required class="form-control "
+                                                    value="">
+
+                                            </div>
+
+                                            <div class="mb-3 col-md-6">
+                                                <label for="last_name" class="form-label">Last Name</label>
+
+                                                <input type="text" name="last_name" id="last_name"
+                                                    placeholder="Enter your last name" required class="form-control "
+                                                    value="">
+
+                                            </div>
+
+                                            <div class="mb-3 col-md-12">
+                                                <label for="company" class="form-label">Company</label>
+
+                                                <input type="text" name="company" id="company"
+                                                    placeholder="Enter your company name" required class="form-control "
+                                                    value="">
+
+                                            </div>
+
+
+                                            <div class="mb-3 col-md-12">
+                                                <label for="email" class="form-label">Email</label>
+
+                                                <input type="email" name="email" id="email"
+                                                    placeholder="Enter email address" required class="form-control "
+                                                    value="">
+
+                                            </div>
+
+
+                                            <div class="mb-3 col-md-6">
+                                                <label for="phone" class="form-label">Phone</label>
+
+                                                <div class="input-group">
+                                                    <span class="input-group-text" style="background: transparent">+
+                                                        1</span>
+                                                    <input type="text" id="phone" placeholder="xxx-xxx-xxxx" required
+                                                        class="form-control " value="">
+                                                </div>
+
+                                                <input type="hidden" name="phone" value="" />
+
+                                            </div>
+
+
+                                            <div class="mb-3 col-md-6">
+                                                <label for="timezone" class="form-label">Timezone</label>
+
+                                                <label for="" id="timezone-label"
+                                                    class="form-label float-end bg-soft-warning px-1 text-dark rounded-1 px-3 fw-normal">04:59
+                                                    AM</label>
+
+                                                <select name="timezone" id="timezone" class="form-select">
+                                                    <option value="America/Los_Angeles" data-time="04:59 AM">Pacific
+                                                        Time
+                                                    </option>
+                                                    <option value="America/Denver" data-time="05:59 AM">Mountain Time
+                                                    </option>
+                                                    <option value="America/Chicago" data-time="06:59 AM">Central Time
+                                                    </option>
+                                                    <option value="America/New_York" data-time="07:59 AM">Eastern Time
+                                                    </option>
+                                                    <option value="America/Anchorage" data-time="03:59 AM">Alaska Time
+                                                    </option>
+                                                    <option value="Pacific/Honolulu" data-time="01:59 AM">Hawaii Time
+                                                    </option>
+                                                    <option value="America/Puerto_Rico" data-time="07:59 AM">Puerto Rico
+                                                        Time</option>
+                                                </select>
+                                            </div>
+
+
+                                            <div class="mb-2">
+                                                <label for="password" class="form-label">Password</label>
+
+                                                <div class="position-relative auth-pass-inputgroup mb-3">
+
+                                                    <input type="password" style="background-image: none;"
+                                                        name="password" id="password" placeholder="Enter password"
+                                                        required class="form-control " value="">
+
+                                                    <button
+                                                        class="btn btn-link position-absolute end-0 top-0 text-decoration-none text-muted"
+                                                        type="button" id="password-addon">
+                                                        <i class="ri-eye-fill align-middle"></i>
+                                                    </button>
+
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="mb-2">
+                                                <p class="mb-0 fs-6 text-muted fst-italic ">
+                                                    By registering you agree to the APARBooks
+                                                    <a href="terms.html"
+                                                        class="text-primary text-decoration-underline fst-normal fw-medium">
+                                                        Terms of Service
+                                                    </a>,
+                                                    <a href="privacy.html"
+                                                        class="text-primary text-decoration-underline fst-normal fw-medium">
+                                                        Privacy Policy
+                                                    </a>
+                                                </p>
+                                            </div>
+
+                                            <div class="mt-4">
+                                                <button class="btn btn-primary w-100 text-white" type="button" id="signUpBtn">
+                                                    <i class="ri-arrow-right-line align-bottom me-2"></i>Register
+                                                </button>
+                                                <button class="btn btn-primary w-100" type="button" id="signUpBtn_loader"
+                                                    style="display:none" disabled>
+                                                    <div class="spinner-border text-light" role="status">
+                                                        <span class="sr-only"></span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <input type="hidden" name="product" value="" />
+                                        <input type="hidden" name="plan" value="" />
+                                        <input type="hidden" name="source" value="normal" />
+                                        <input type="hidden" name="back" value="" />
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card body -->
+                    </div>
+                    <!-- end card -->
+
+                    <div class="mt-4 text-center">
+                        <p class="mb-0">
+                            Already have an account ?
+                            <a href="login.html"
+                                class="fw-semibold text-primary text-decoration-underline">
+                                Signin
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <footer class=" py-4 footerAuth bg-white ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <p class="mb-0 text-muted small">
+                            &copy; 2020-
+                            <script>document.write(new Date().getFullYear())</script> APARBOOKS Technologies All Rights
+                            Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="preloader" class="bg-light bg-opacity-50 d-none">
+        <div id="status">
+            <div class="spinner-border text-primary avatar-sm" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://staging-aparbooks.com/assets/js/cleave.js.min.js"></script>
+    <script src="https://staging-aparbooks.com/assets/js/cleave-phone.us.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
